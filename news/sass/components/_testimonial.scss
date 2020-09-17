@@ -1,0 +1,78 @@
+@import '../abstracts/var';
+.testimonial {
+    width: 60%;
+    padding: 1.5rem 0rem 0.5rem 2.5rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    box-shadow: 1rem 0rem 1rem rgba($color: #000000, $alpha: 0.4);
+    font-size: $default-font-size;
+    border-radius: 50rem;
+    background-color: rgba($color-white, 0.5);
+    &__shape {
+        width: 10rem;
+        height: 10rem;
+        background-color: orangered;
+        float: left;
+        position: relative;
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-1rem);
+        shape-outside: circle(50% at 50% 50%);
+    }
+    &__text {
+        p {
+            font-size: 1.4rem;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+    }
+    &__caption {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+    &:hover &__img{
+        filter: blur(.4rem) brightness(70%);
+        transform: scale(1.3);
+    }
+}
+@media screen and (max-width: 1199px) {
+    .testimonial {
+        width: 70%;
+        font-size: ($default-font-size - 0.2);
+    }
+}
+@media screen and (max-width: 576px) {
+    .testimonial {
+        padding: 1.5rem 2.5rem 0.5rem 2.5rem;
+        width: 75%;
+        &__text {
+            p {
+                font-size: 1.4rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+        }
+    }
+}
+@media screen and (max-width: 460px) {
+    .testimonial {
+        width: 90%;
+    }
+}

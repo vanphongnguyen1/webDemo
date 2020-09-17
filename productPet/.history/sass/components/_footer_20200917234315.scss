@@ -1,0 +1,98 @@
+.footer {
+    background-color: rgb(48,32,33);
+    padding: 7rem 0;
+    &__item {}
+    &__title {
+        color: #fff;
+        img {
+            height: 10rem;
+            margin-bottom: 2rem;
+        }
+        .form {
+            position: relative;
+            &__email {
+                width: 100%;
+                padding: 0.5rem 0.6rem;
+                font-size: 1.6rem;
+            }
+            .icon {
+                position: absolute;
+                top: 4px;
+                right: 10px;
+                color: red;
+                font-size: 2rem;
+            }
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+        .list-address {
+            &__item {
+                list-style: none;
+                padding: 4px 0;
+                margin-bottom: 3px;
+                .icon {
+                    margin-right: 5px;
+                }
+                &--text {
+                    color: #ccc;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+        .list-support {
+            &__item {
+                list-style: none;
+                padding: 4px 0;
+                margin-bottom: 3px;
+                &--text {
+
+                }
+            }
+        }
+        .list-info {
+            &__item {
+                display: inline-block;
+                font-size: 2.4rem;
+                margin-right: 0.8rem;
+                &--faceboock {
+                    color: #3a589d;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: #1e315d;
+                    }
+                }
+                &--instagram {
+                    color: #3b6994;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: #2c4e6d;
+                    }
+                }
+                &--twitter {
+                    transition: all 0.3s ease-in-out;
+                    color: #2274b5;
+                    &:hover {
+                        color: #205e8e;
+                    }
+                }
+                &--flickr {
+                    transition: all 0.3s ease-in-out;
+                    color: #e5086f;
+                    &:hover {
+                        color: #940649;
+                    }
+                }
+            }
+        }
+    }
+}

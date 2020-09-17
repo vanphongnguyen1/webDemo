@@ -1,0 +1,18 @@
+.slider {
+    &__box {}
+    &__item-one {
+        background-image: url('../images/slider-shop-1.jpg');
+        height: 48rem;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        &--sale {
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+                width: 50%;
+            }
+        }
+    }
+}

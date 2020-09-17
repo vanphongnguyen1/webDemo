@@ -1,0 +1,58 @@
+@import '../abstracts/var';
+.skill-box {
+    text-align: center;
+    padding: 3rem;
+    background-color: $color-white;
+    border-radius: 5.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 1rem 2rem 3rem rgba($color-black, 0.3);
+    &__icon {
+        font-size: 3.5rem;
+        padding: 2rem 0;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light,0.1),
+            rgba($color-primary-dark,0.8),);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &__text {
+        line-height: 2.5rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
+        font-size: 1.2rem;
+    }
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.02);
+        box-shadow: 1rem 2rem 3rem rgba($color-black, 0.6);
+
+    }
+}
+@media screen and (max-width: 1199px) {
+    .skill-box {
+        padding: 2rem;
+        border-radius: 1.5rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .skill-box {
+        padding: 1rem 1rem 2rem 1rem;
+        border-radius: 1.5rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .skill-box {
+        padding: 2rem 3rem;
+        margin-bottom: 4.5rem;
+        &__icon {
+            font-size: 4rem;
+        }
+        &__text {
+            line-height: 2.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}

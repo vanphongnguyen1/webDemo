@@ -1,0 +1,31 @@
+.header {
+    background-color: $bg-header;
+    .header-top {
+        color: $color-header;
+        padding: 1rem;
+        &__home {
+            text-transform: uppercase;
+            &::before {
+                content: '\f015';
+            }
+        }
+        &__date {
+            &::before {
+                content: "\f017";
+                font-family: 'FontAwesome';
+            }
+        }
+        &__email {
+            &::before {
+                content: "\f0e0";
+                font-family: 'FontAwesome';
+            }
+        }
+        &__login {
+            &::before {
+                content: "\f061";
+                font-family: 'FontAwesome';
+            }
+        }
+    }
+}

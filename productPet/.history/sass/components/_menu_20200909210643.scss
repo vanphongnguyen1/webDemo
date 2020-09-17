@@ -1,0 +1,67 @@
+.menu {
+    background-color: $color-main;
+    &-box {
+        &__list {
+            text-align: center;
+        }
+        &__item {
+            display: inline-block;
+            margin: 0 1.5rem;
+            color: $color-text-menu;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            &--icon {
+                // margin-left: 0.5rem;
+            }
+            .list-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 30rem;
+                text-align: left;
+                padding: 2rem 0;
+                border: 2px solid #ddd;
+                &__item {
+                    list-style: none;
+                    padding: 1rem 1.5rem;
+                    &:hover {
+                        background-color: $color-grey-line;
+                    }
+                }
+                &__text {
+                    font-size: 1.3rem;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid #fff;
+                    z-index: 3;
+                    transform: translate(301%, -100%);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-left: 14px solid transparent;
+                    border-right: 14px solid transparent;
+                    border-bottom: 14px solid #ddd;
+                    transform: translate(200%, -100%);
+                }
+            }
+        }
+        &__text {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            padding: 2rem 1rem;
+            &:hover {
+                color: $color-textmenu-hover;
+            }
+        }
+    }
+}

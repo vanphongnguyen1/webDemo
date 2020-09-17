@@ -1,0 +1,49 @@
+@import '../abstracts/varlibel';
+.popular {
+    &__item {
+        position: relative;
+        overflow: hidden;
+        margin-top: 3rem;
+        box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.3);
+        &--img {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &--info {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            font-size: 1.6rem;
+            font-weight: 500;
+            span {
+                font-size: 1.4rem;
+                color: #969696;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .popular {
+        &__item {
+            &--info {
+                font-size: 2rem;
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .popular {
+        &__item {
+            &--img {
+                transition: all 0.3s ease-in-out;
+                width: 100%;
+            }
+        }
+    }
+}

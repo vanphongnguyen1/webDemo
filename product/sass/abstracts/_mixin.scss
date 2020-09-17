@@ -1,0 +1,5 @@
+@import './varlibel';
+@mixin hover-a {
+    color: $color-main;
+    text-decoration: none;
+}

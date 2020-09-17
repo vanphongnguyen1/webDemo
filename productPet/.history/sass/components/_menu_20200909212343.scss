@@ -1,0 +1,78 @@
+.menu {
+    background-color: $color-main;
+    &-box {
+        &__list {
+            text-align: center;
+        }
+        &__item {
+            display: inline-block;
+            margin: 0 1.5rem;
+            color: $color-text-menu;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            .list-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 30rem;
+                text-align: left;
+                padding: 2rem 0;
+                border: 2px solid #ddd;
+                background-color: $color-width;
+                transform: translateY(-4%);
+                z-index: 3;
+                display: none;
+                animation-name: list-cart;
+                animation-duration: 0.3s;
+                &__item {
+                    list-style: none;
+                    padding: 1rem 1.5rem;
+                    transition: all 0.5s ease-in-out;
+                    &:hover {
+                        background-color: $color-grey-line;
+                    }
+                }
+                &__text {
+                    font-size: 1.3rem;
+                }
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &::before {
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid #fff;
+                    z-index: 3;
+                    transform: translate(301%, -95%);
+                }
+                &::after {
+                    border-left: 13px solid transparent;
+                    border-right: 13px solid transparent;
+                    border-bottom: 13px solid #ddd;
+                    transform: translate(220%, -100%);
+                }
+            }
+        }
+        &__item:nth-child(3):hover {
+            .list-menu {
+                display: block;
+            }
+        }
+        &__text {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            padding: 2rem 1rem;
+            &--icon {
+                margin-left: 0.5rem;
+            }
+            &:hover {
+                color: $color-textmenu-hover;
+            }
+        }
+    }
+}

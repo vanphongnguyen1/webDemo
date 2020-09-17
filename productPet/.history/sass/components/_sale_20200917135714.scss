@@ -1,0 +1,14 @@
+.sec-sale {
+    background-color: $color-grey;
+    &__item {
+        background-color: #FEC748;
+    }
+    &__link {
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

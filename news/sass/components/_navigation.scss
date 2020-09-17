@@ -1,0 +1,213 @@
+@import '../abstracts/var';
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+    &__bottom {
+        background-color: $color-white;
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: 5rem;
+        right: 15rem;
+        border-radius: 50%;
+        z-index: 2000;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+    &__background {
+        background-image: radial-gradient($color-primary,$color-primary-dark);
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
+        top: 5.5rem;
+        right: 15.5rem;
+        border-radius: 50%;
+        z-index: 1998;
+        transition: transform 0.7s ease-in-out;
+    }
+    &__checkbox:checked~&__background {
+        transform: scale(80);
+    }
+    &__nav {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        z-index: 1999;
+        opacity: 0;
+        
+        transition: all 0.7s ease-in-out;
+    }
+    &__list {
+        @include absCenter;
+        list-style: none;
+        text-align: center;
+    }
+    &__item {
+        margin: 1rem;
+        display: none;
+    }
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            width: 100%;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: radial-gradient(150% 200% ellipse at 115%,
+                $color-white 0%,
+                $color-white 50%,
+                transparent 50%
+            );
+            background-size: 252%;
+            transition: all 0.5s ease-in-out;
+        }
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary;
+            transform: translateX(1rem);
+        }
+    }
+    &__checkbox:checked~&__nav {
+        opacity: 1;
+        width: 100%;
+        // display: block;
+    }
+    &__checkbox:checked~&__nav &__item{
+        display: block;
+    }
+    &__icon {
+        position: relative;
+        margin-top: 2.3rem;
+        &,
+        &::before,
+        &::after {
+            width: 2.5rem;
+            height: .3rem;
+            background-color: $color-grey-dark;
+            display: inline-block;
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s ease-in-out;
+        }
+        &::before {
+            top: - .8rem;
+        }
+        &::after {
+            top:  .8rem;
+        }
+    }
+    &__bottom:hover &__icon::before {
+        top: -0.7rem;
+    }
+    &__bottom:hover &__icon::after {
+        top: 0.7rem;
+    }
+    &__checkbox:checked+&__bottom &__icon {
+        background-color: transparent;
+    }
+    &__checkbox:checked+&__bottom &__icon::before {
+        transform: rotate(135deg);
+        top: 0;
+    }
+    &__checkbox:checked+&__bottom &__icon::after {
+        transform: rotate(-135deg);
+        top: 0;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .navigation {
+        &__bottom {
+            top: 6rem;
+            right: 13rem;
+        }
+        &__background {
+            top: 6.5rem;
+            right: 13.5rem;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .navigation {
+        &__bottom {
+            top: 10rem;
+            right: 25rem;
+        }
+        &__background {
+            top: 10.5rem;
+            right: 25.5rem;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .navigation {
+        &__bottom {
+            top: 8rem;
+            right: 15rem;
+        }
+        &__background {
+            top: 8.5rem;
+            right: 15.5rem;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .navigation {
+        &__bottom {
+            top: 9rem;
+            right: 20rem;
+        }
+        &__background {
+            top: 9.5rem;
+            right: 20.5rem;
+        }
+    }
+}
+@media screen and (max-width: 670px) {
+    .navigation {
+        &__bottom {
+            top: 9rem;
+            right: 15rem;
+        }
+        &__background {
+            top: 9.5rem;
+            right: 15.5rem;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .navigation {
+        &__bottom {
+            top: 8rem;
+            right: 8rem;
+        }
+        &__background {
+            top: 8.5rem;
+            right: 8.5rem;
+        }
+    }
+}
+@media screen and (max-width: 460px) {
+    .navigation {
+        &__bottom {
+            top: 6rem;
+            right: 6rem;
+        }
+        &__background {
+            top: 6.5rem;
+            right: 6.5rem;
+        }
+    }
+}

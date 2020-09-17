@@ -1,0 +1,177 @@
+@import '../abstracts/var';
+.cards {
+    perspective: 100rem;
+    position: relative;
+    height: 40rem;
+    &__side {
+        font-size: 2rem;
+        transition: all 0.8s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+        &--front {
+            background-color: $color-white;
+        }
+        &--back {
+            transform: rotateY(180deg);
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-secondary-light,0.4),
+                    rgba($color-secondary-dark,0.8),);
+            }
+            &-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-tertiary-light,0.4),
+                    rgba($color-tertiary-dark,0.8),);
+            }
+            &-3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-primary-light,0.4),
+                    rgba($color-primary-dark,0.8),);
+            }
+        }
+   }
+   &__picture {
+       background-blend-mode: screen;
+       background-size: cover;
+       background-position: center;
+       height: 23rem;
+       clip-path: ellipse(80% 70% at 50% 30%);
+        &--1 {
+            background-image: linear-gradient(to right,
+            $color-secondary-light,$color-secondary-dark),
+            url('../imgs/picture1.jpg')
+        }
+        &--2 {
+            background-image: linear-gradient(to right,
+            $color-tertiary-light,$color-tertiary-dark),
+            url('../imgs/picture2.jpg')
+        }
+        &--3 {
+            background-image: linear-gradient(to right,
+            $color-primary-light,$color-primary-dark),
+            url('../imgs/picture3.jpg')
+        }
+    }
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 400;
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+        &-span {
+            text-align: center;
+            padding: 0 1rem;
+            border-radius: 2rem;
+            -webkit-box-decoration-break: clone;
+            &--1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-secondary-light,0.8),
+                    rgba($color-secondary-dark,0.8),);
+            }
+            &--2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-tertiary-light,0.8),
+                    rgba($color-tertiary-dark,0.8),);
+            }
+            &--3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-primary-light,0.8),
+                    rgba($color-primary-dark,0.8),);
+            }
+        }
+    }
+    &__details {
+        padding: 3rem;
+        color: $color-grey;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #bdbdbd;
+                }
+            }
+        }
+    }
+    &__cta {
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__price {
+        &-box {
+            text-align: center;
+            padding-bottom: 2rem;
+            padding-top: 8.5rem;
+            color: $color-white;
+        }
+        &-only {
+            margin-bottom: 3rem;
+        }
+        &-value {
+            font-size: 8rem;
+            font-weight: 100;
+            margin-bottom: 5rem;
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+}
+@media screen and (max-width: 1199px) {
+    .cards {
+       &__picture {
+           height: 23rem;
+           clip-path: ellipse(80% 70% at 50% 25%);
+        }
+        &__heading {
+            font-size: 2.2rem;
+            font-weight: 400;
+            top: 12rem;
+            right: 2rem;
+            width: 75%;
+        }
+        &__details {
+            padding: 3rem;
+            color: $color-grey;
+            ul {
+                li {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        &__price {
+            &-only {
+                margin-bottom: 3.5rem;
+            }
+            &-value {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .cards {
+        margin-bottom: 5rem;
+    }
+}

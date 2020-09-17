@@ -1,0 +1,120 @@
+@import '../abstract/varlirbel';
+.header {
+    .header-top {
+        font-size: 1.3rem;
+        color: $color-header;
+        padding: 0.2rem;
+        background-color: $bg-header-top;
+        &__home {
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+        }
+        &__email {
+            @extend .header-top__date;
+        }
+        &__login {
+            @extend .header-top__date;
+        }
+        &__icon {
+            font-size: 2.3rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .header-bottom {
+        background-color: $bg-header-bottom;
+        &__item {
+            height: 100%;
+            padding: 0.5rem 0;
+            &--logo {
+                img {
+                    width: 25%;
+                }
+            }
+            .max-h {
+                height: 100%;
+            }
+            .item__phone {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                &--icon {
+                    @include header--icon;
+                }
+                &--text {
+                    color: #ccc;
+                    margin-left: 1rem;
+                    margin-right: 0.5rem;
+                }
+                &--number {
+                    color: #fff;
+                }
+            }
+            .item__cart {
+                @extend .item__phone;
+                &--icon {
+                    @include header--icon;
+                }
+                &--text {
+                    color: $color-width;
+                    margin-right: 1rem;
+                }
+            }
+            .item__search {
+                @extend .item__phone;
+                &--icon {
+                    @include header--icon;
+                }
+            }
+        }
+    }
+}
+@-webkit-keyframes phone {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+      -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes phone {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+      -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }

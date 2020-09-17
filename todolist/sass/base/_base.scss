@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input, button, textarea {
+    font-family: inherit;
+}
+ul {
+    margin: 0;
+    padding: 0
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    line-height: inherit
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+// ----------------------------
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    color: #777777;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: #000;
+    }
+    &--plus {
+        padding: 0 0.5rem;
+        background-color: rgba(0,0,0, 0.2);
+        font-size: 3.5rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &--check {
+        font-size: 3.3rem;
+        padding: 0rem 0.7rem;
+        background-color: #aceb9e;
+    }
+    &--delete {
+        font-size: 3.3rem;
+        padding: 0rem 0.7rem;
+        background-color: #efbaba;
+    }
+}
+.fal, .far {
+    pointer-events: none;
+}
+.done button.btn--check {
+    display: none;
+}
+.btn--clear-todo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0rem 2rem rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    &:hover {
+        box-shadow: 0 0rem 2rem rgba(0,0,0,0.3);
+    }
+}

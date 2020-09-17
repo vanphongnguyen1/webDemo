@@ -1,0 +1,46 @@
+.slider {
+    &__box {}
+    &__item-one {
+        background-image: url('../images/slider-shop-1.jpg');
+        height: 48rem;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        &--sale {
+            position: absolute;
+            top: 3rem;
+            left: 15rem;
+            img {
+                width: 85%;
+            }
+        }
+        .heading__title {
+            position: absolute;
+            top: 8.5rem;
+            right: 20rem;
+            &--h2 {
+                font-size: 4.8rem;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 0.5rem;
+            }
+            &--h1 {
+                font-size: 4.8rem;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 2.5rem;
+            }
+            &--p {
+                font-size: 1.6rem;
+                color: #fff;
+                margin-bottom: 0.7rem;
+            }
+            &--h6 {
+                font-size: 1.6rem;
+                font-weight: 900;
+                color: #fff;
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
+}

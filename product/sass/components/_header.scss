@@ -1,0 +1,77 @@
+@import '../abstracts/varlibel';
+@import '../abstracts/mixin';
+header {
+    background-color: $color-bg-header;
+    .header {
+        font-size: 1.2rem;
+        color: $color-white;
+        padding: 1rem 0;
+        &__list {
+            &-item {
+                display: inline-block;
+                line-height: 1rem;
+                &:not(:last-child) {
+                    border-right: 1px solid $color-white;
+                }
+            }
+            &-text {
+                padding: 0px 1.5rem;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    @include hover-a;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    header {
+        .header {
+            padding: 0;
+            &__slogan {
+                padding: 0.5rem 0;
+                font-size: 1.8rem;
+                letter-spacing: 3px;
+            }
+            &__list {
+                &-item {
+                    margin: 0.5rem 0;
+                }
+                // &-text {
+                //     font-size: 1.4rem;
+                // }
+            }
+        }
+    }
+}
+@media (max-width: 576.98px) {
+    header {
+        .header {
+            &__slogan {
+                font-size: 1.4rem;
+                letter-spacing: 3px;
+            }
+            &__list {
+                &-text {
+                    padding: 0px 0.5rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    header {
+        .header {
+            &__slogan {
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+            }
+            &__list {
+                &-text {
+                    padding: 0px 0.3rem;
+                }
+            }
+        }
+    }
+}

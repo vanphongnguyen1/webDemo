@@ -1,0 +1,16 @@
+.btn {
+    &--start {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $color-textmenu-hover;
+        padding: 1rem 2.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    &--cart {
+        display: inline-block;
+        padding: 0.5rem 3rem;
+        border: 1px solid $color-grey-line;
+        margin: 2rem 0;
+    }
+}

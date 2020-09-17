@@ -1,0 +1,111 @@
+@import '../abstracts/varlibel';
+.creator {
+    background-image: linear-gradient(to right bottom,
+    rgba($color-grey,0.2),
+    rgba(#7b7b7b,0.8)),
+    url('../images/bg_testi.jpg');
+    background-size: cover;
+    background-position: center;
+    &__item {
+        width: calc(4/12 * 100%);
+        display: flex;
+        padding: 4rem 0;
+        &--img {
+            height: 12rem;
+            margin-left: 3rem;
+            z-index: 9;
+            transition: all 1s ease;
+        }
+        &--info {
+            width: 60%;
+            background: #fff;
+            border-radius: 0.5rem;
+            margin-left: -2rem;
+            padding: 2rem 2rem 2rem 4rem;
+            p {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 6;
+                overflow: hidden;
+            }
+            div {
+                margin-top: 1.5rem;
+                font-style: normal;
+                font-size: 1.6rem;
+                font-weight: 600;
+                i {
+                    color: #4fb68d;
+                    font-size: 4rem;
+                    margin-bottom: 1rem;
+                }
+                span {
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    font-weight: 400;
+                }
+            }
+        }
+        &:hover &--img {
+            transform: rotate(360deg);
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    .creator {
+        &__item {
+            width: calc(4/12 * 100%);
+            padding: 3.5rem 0;
+            &--img {
+                height: 10rem;
+                margin-left: 2.5rem;
+            }
+            &--info {
+                width: 65%;
+                p {
+                    font-size: 1.3rem;
+                }
+                div {
+                    margin-top: 1.3rem;
+                    font-size: 1.4rem ;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .creator {
+        &__item {
+            width: calc(6/12 * 100%);
+        }
+    }
+}
+@media (max-width: 671.98px) {
+    .creator {
+        &__item {
+            padding: 3rem 0;
+            &--img {
+                height: 8rem;
+                margin-left: 2.3rem;
+            }
+            &--info {
+                width: 65%;
+                p {
+                    font-size: 1.2rem;
+                }
+                div {
+                    font-size: 1.2rem ;
+                    i {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576.98px) {
+    .creator {
+        &__item {
+            width: calc(8/12 * 100%);
+        }
+    }
+}

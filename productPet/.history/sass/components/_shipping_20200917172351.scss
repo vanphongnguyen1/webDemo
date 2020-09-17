@@ -1,0 +1,21 @@
+.shipping {
+    &__box {
+        text-align: center;
+        border-bottom: 2px solid #ccc;
+        border-radius: 2px;
+        &--title {
+            padding-top: 2.5rem;
+            color: #fff;
+            font-size: 3.5rem;
+        }
+        &--text {
+            padding-bottom: 2.5rem;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
+    .bg-box1 {
+        background-color: $color-main;
+    }
+}

@@ -1,0 +1,10 @@
+.menu {
+    background-color: $color-main;
+    &-box {
+        &__list {}
+        &__item {
+            &--icon {}
+        }
+        &__text {}
+    }
+}

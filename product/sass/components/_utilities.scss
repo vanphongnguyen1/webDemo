@@ -1,0 +1,56 @@
+@import '../abstracts/varlibel';
+.utilities {
+    border: 1px solid $color-grey;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    &__item {
+        &--info {
+            font-size: 1.2rem;
+            margin-left: 1.5rem;
+            span {
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    .utilities {
+        &__item {
+            align-items: center;
+            img {
+                height: 5rem;
+            }
+            &--info {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .utilities {
+        padding: 0 1.5rem;
+        &__item {
+            padding: 1rem 0;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .utilities {
+        &__item {
+            img {
+                height: 4rem;
+            }
+            &--info {
+                font-size: 1rem;
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

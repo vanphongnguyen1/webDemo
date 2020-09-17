@@ -1,0 +1,20 @@
+.header {
+    background-color: $bg-header;
+    .header-top {
+        color: $color-header;
+        padding: 1rem;
+        &__home {
+            text-transform: uppercase;
+            &--icon {}
+        }
+        &__date {
+            &--icon {}
+        }
+        &__email {
+            &--icon {}
+        }
+        &__login {
+            &--icon {}
+        }
+    }
+}

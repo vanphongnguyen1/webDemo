@@ -1,0 +1,70 @@
+@import '../abstract/varlirbel';
+.header {
+    background-color: $bg-header-top;
+    .header-top {
+        color: $color-header;
+        padding: 1rem;
+        &__home {
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+        }
+        &__email {
+            @extend .header-top__date;
+        }
+        &__login {
+            @extend .header-top__date;
+        }
+        &__icon {
+            font-size: 2.3rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .header-bottom {
+        background-color: $bg-header-bottom;
+        &__item {
+            &--logo {
+                img {
+                    width: 35%;
+                }
+            }
+            .item__phone {
+                font-size: 1.8rem;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                &--icon {
+                    @include header--icon;
+                }
+                &--text {
+                    color: #ccc;
+                    margin-left: 1rem;
+                    margin-right: 0.5rem;
+                }
+                &--number {
+                    color: #fff;
+                }
+            }
+            .item__cart {
+                @extend .item__phone;
+                &--icon {
+                    @include header--icon;
+                }
+                &--text {
+                    color: $color-width;
+                    margin-right: 1rem;
+                }
+            }
+            .item__search {
+                @extend .item__phone;
+                &--icon {
+                    @include header--icon;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@mixin header--icon {
+    font-size: 2rem;
+    color: $color-main;
+    border: 1px solid $color-main;
+    border-radius: 50%;
+    padding: 0.3rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    animation-name: phone;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@mixin heading-h2 {
+    font-size: 4.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+@mixin heading-h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+@mixin heading-p {
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+}
+@mixin heading-h6 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}

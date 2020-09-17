@@ -1,0 +1,160 @@
+footer {
+    background: #f6f6f6;
+    padding: 3rem 0;
+    color: #7b7b7b;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            width: 37rem;
+            &__logo {
+                font-size: 3rem;
+                span {
+                    color: $color-main;
+                }
+            }
+            h6 {
+                margin-top: 2rem;
+                font-size: 1.4rem;
+            }
+            &__media {
+                margin-top: 3rem;
+                font-size: 2rem;
+                a {
+                    padding: 0 0.5rem;
+                    &:hover {
+                        @include hover-a;
+                    }
+                }
+            }
+        }
+        &-right {
+            width: calc(100% - 40rem);
+            &__title {
+                margin-top: 3rem;
+                border-bottom: 0.2rem solid #dadada;
+                padding-bottom: 0.8rem;
+                font-weight: 600;
+                position: relative;
+                font-size: 1.8rem;
+                &::before {
+                    content: "";
+                    height: 0.2rem;
+                    width: 6rem;
+                    background: #4fb68d;
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.2rem;
+                }
+            }
+            &__menu {
+                margin-top: 2rem;
+                ul {
+                    li {
+                        list-style: none;
+                        line-height: 3rem;
+                        font-size: 1.4rem;
+                        &:hover a {
+                            @include hover-a;
+                        }
+                    }
+                }
+            }
+            h6 {
+                margin-top: 2rem;
+                font-size: 1.4rem;
+            }
+            &__input {
+                margin-top: 3rem;
+                position: relative;
+                input {
+                    border: none;
+                    background: $color-white;
+                    height: 5.5rem;
+                    width: 100%;
+                    padding-left: 2rem;
+                    border-radius: 10rem;
+                }
+                button {
+                    background: $color-black;
+                    border: none;
+                    color: $color-white;
+                    border-radius: 0 10rem 10rem 0;
+                    height: 5.5rem;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 30%;
+                    font-weight: 500;
+                }
+            }
+            &__app {
+                margin-top: 3rem;
+                img {
+                    margin-top: 1rem;
+                }
+            }
+            &__playment {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    footer {
+        .footer {
+            &-right {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    footer {
+        .footer {
+            display: block;
+            &-left {
+                width: 100%;
+                text-align: center;
+            }
+            &-right {
+                width: 100%;
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576.98px) {
+    footer {
+        .footer {
+            &-right {
+                &__title {
+                    font-size: 1.4rem;
+                }
+                &__menu {
+                    ul {
+                        li {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                h6 {
+                    font-size: 1.2rem;
+                }
+                &__input {
+
+                    input {
+                        font-size: 1.1rem;
+                    }
+                    button {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

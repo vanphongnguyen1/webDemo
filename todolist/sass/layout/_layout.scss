@@ -1,0 +1,8 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6 {
+    width: calc((6/12 * 100%));
+    padding: 0 30px;
+}

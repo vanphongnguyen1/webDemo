@@ -1,0 +1,45 @@
+.menu {
+    background-color: $color-main;
+    &-box {
+        &__list {
+            text-align: center;
+        }
+        &__item {
+            display: inline-block;
+            margin: 0 1.5rem;
+            color: $color-text-menu;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            &--icon {
+                // margin-left: 0.5rem;
+            }
+            .list-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 30rem;
+                text-align: left;
+                /* background-color: #ccc; */
+                padding: 2rem 0;
+                border: 2px solid #ddd;
+                &__item {
+                    list-style: none;
+                    background-color: #ccc;
+                    padding: 1rem 1.5rem;
+                }
+                &__text {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        &__text {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            padding: 2rem 1rem;
+            &:hover {
+                color: $color-textmenu-hover;
+            }
+        }
+    }
+}

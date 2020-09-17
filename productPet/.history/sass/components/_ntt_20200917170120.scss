@@ -1,0 +1,9 @@
+.sec-ntt {
+    background-color: $color-grey;
+    padding: 4rem 0;
+    .gallery {
+        &__img {
+            width: 50%;
+        }
+    }
+}

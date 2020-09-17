@@ -1,0 +1,15 @@
+.menu {
+    background-color: $color-main;
+    &-box {
+        &__list {
+            text-align: center;
+        }
+        &__item {
+            display: inline-block;
+            &--icon {}
+        }
+        &__text {
+            color: $color-text-menu;
+        }
+    }
+}

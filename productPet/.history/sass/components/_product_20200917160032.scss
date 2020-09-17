@@ -1,0 +1,39 @@
+.product {
+    .heading__title {
+        text-align: center;
+        h2 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+    }
+    &__box {
+        .content {
+            overflow: hidden;
+            &__img {
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            &__text {
+                border: 1px solid $color-grey-dark;
+                text-align: center;
+                &--p {
+                    font-size: 1rem;
+                    color: $color-grey-dark;
+                    padding: 1rem 0;
+                }
+                &--h4 {
+                    font-weight: 400;
+                    padding: 1rem 0;
+                }
+                &--price {
+                    display: block;
+                    font-size: 2.2rem;
+                    color: #ffca44;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

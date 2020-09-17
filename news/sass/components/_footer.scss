@@ -1,0 +1,59 @@
+@import '../abstracts/var';
+.footer {
+    background-color: $color-footer-dark;
+    padding-bottom: 7rem;
+    &__logo {
+        margin-bottom: 6rem;
+        &-img{
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+    .mr--50 {
+        margin-top: -5rem;
+    }
+    &__navigation {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__list {
+        border-top: 2px solid $color-grey;
+        display: inline-block;
+        word-spacing: 2rem;
+        padding-top: 2rem;
+    }
+    &__item {
+        display: inline-block;
+        &:hover a {
+            color: $color-grey-line;
+        }
+    }
+    &__link {
+        padding: 1rem 0;
+    }
+    &__copyright {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        border-top: 2px solid $color-grey;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer {
+        &__logo {
+            margin-bottom: 3rem;
+            &-img{
+                width: 30%;
+                margin: 0 auto;
+            }
+        .mr--50 {
+            margin-top: 0rem;
+        }
+        }
+        &__navigation {
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+    }
+}

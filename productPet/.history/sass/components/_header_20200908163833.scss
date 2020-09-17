@@ -1,0 +1,94 @@
+@import '../abstract/varlirbel';
+.header {
+    .header-top {
+        font-size: 1.3rem;
+        color: $color-header;
+        padding: 0.2rem;
+        background-color: $bg-header-top;
+        &__home {
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+        }
+        &__email {
+            @extend .header-top__date;
+        }
+        &__login {
+            @extend .header-top__date;
+        }
+        &__icon {
+            font-size: 2.3rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .header-bottom {
+        background-color: $bg-header-bottom;
+        &__item {
+            height: 100%;
+            padding: 0.5rem 0;
+            &--logo {
+                img {
+                    width: 25%;
+                }
+            }
+            .max-h {
+                height: 100%;
+            }
+            .item__phone {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                &--icon {
+                    @include header--icon;
+                }
+                &--text {
+                    color: #ccc;
+                    margin-left: 1rem;
+                    margin-right: 0.5rem;
+                }
+                &--number {
+                    color: #fff;
+                }
+            }
+            .item__cart {
+                position: relative;
+                height: 100%;
+                &-item {
+                    // @extend .item__phone;
+                    &--icon {
+                        @include header--icon;
+                    }
+                    &--text {
+                        color: $color-width;
+                        padding-right: 1rem;
+                    }
+                    .list-cart {
+                        width: 35rem;
+                        background-color: #ccc;
+                        padding: 2rem;
+                        position: absolute;
+                        top: 100%;
+                        left: -10%;
+                        transform: translateY(-10%);
+                        opacity: 0;
+                    }
+                    &--icon:hover ~.list-cart,
+                    &--text:hover ~.list-cart {
+                    opacity: 1;
+                    }
+                }
+            }
+            .item__search {
+                @extend .item__phone;
+                &--icon {
+                    @include header--icon;
+                }
+            }
+        }
+    }
+}

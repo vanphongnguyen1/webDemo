@@ -1,0 +1,29 @@
+.header {
+    background-color: $bg-header-top;
+    .header-top {
+        color: $color-header;
+        padding: 1rem;
+        &__home {
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+        }
+        &__email {
+            @extend .header-top__date;
+        }
+        &__login {
+            @extend .header-top__date;
+        }
+        &__icon {
+            font-size: 2.3rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .header-bottom {
+        background-color: $bg-header-bottom;
+    }
+}

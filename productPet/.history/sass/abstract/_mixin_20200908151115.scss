@@ -1,0 +1,7 @@
+@mixin header--icon {
+    font-size: 2rem;
+    color: $color-main;
+    border: 1px solid $color-main;
+    border-radius: 50%;
+    padding: 0.5em;
+}

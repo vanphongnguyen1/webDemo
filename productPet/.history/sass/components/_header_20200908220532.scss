@@ -1,0 +1,158 @@
+@import '../abstract/varlirbel';
+.header {
+    .header-top {
+        font-size: 1.3rem;
+        color: $color-header;
+        padding: 0.2rem;
+        background-color: $bg-header-top;
+        &__home {
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+        }
+        &__email {
+            @extend .header-top__date;
+        }
+        &__login {
+            @extend .header-top__date;
+        }
+        &__icon {
+            font-size: 2.3rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .header-bottom {
+        background-color: $bg-header-bottom;
+        &__item {
+            height: 100%;
+            padding: 0.5rem 0;
+            &--logo {
+                img {
+                    width: 25%;
+                }
+            }
+            .max-h {
+                height: 100%;
+            }
+            .item__phone {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                &--icon {
+                    @include header--icon;
+                }
+                &--text {
+                    color: #ccc;
+                    margin-left: 1rem;
+                    margin-right: 0.5rem;
+                }
+                &--number {
+                    color: #fff;
+                }
+            }
+            .item__cart {
+                position: relative;
+                @extend .item__phone;
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.5rem 1rem;
+                    color: $color-width;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    position: relative;
+                    &--icon {
+                        @include header--icon;
+                    }
+                    &--text {
+
+                        padding-right: 1rem;
+                    }
+                    &:hover {
+                        color: $color-main;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 35rem;
+                        height: 2rem;
+                        opacity: 0;
+                        transform: translate(-8%,171%);
+                    }
+                }
+                .list-cart {
+                    width: 35rem;
+                    background-color: $color-width;
+                    border: 2px solid #ddd;
+                    padding: 2rem;
+                    position: absolute;
+                    top: 80%;
+                    left: -10%;
+                    border-radius: 3px;
+                    display: none;
+                    transition: all 0.3s ease-in-out;
+                    animation-name: list-cart;
+                    animation-duration: 0.3s;
+                    // margin-top: 2rem;
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                    &::before {
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid $color-width;
+                        transform: translate(500%,-100%);
+                        z-index: 3;
+                    }
+                    &::after {
+                        border-left: 14px solid transparent;
+                        border-right: 14px solid transparent;
+                        border-bottom: 14px solid #ddd;
+                        transform: translate(343%, -100%);
+                    }
+                    &:hover {
+                        display: block;
+                    }
+                    ul {
+                        max-height: 30rem;
+                        overflow: overlay;
+                        li {
+                            list-style: none;
+                            color: #777777;
+                            padding: 1rem;
+                        }
+                    }
+                    &__content {
+                        padding: 1rem;
+                        &--text {}
+                    }
+                }
+                &-item:hover ~.list-cart {
+                    display: block;
+                }
+            }
+            .item__search {
+                @extend .item__phone
+                &-box {
+                    // display: flex;
+                    // align-items: center;
+                    // padding: 0.5rem 1rem;
+                    &--icon {
+                        @include header--icon;
+                    }
+                }
+            }
+        }
+    }
+}

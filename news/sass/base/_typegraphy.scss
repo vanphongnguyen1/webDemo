@@ -1,0 +1,95 @@
+@import '../abstracts/var';
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $color-grey;
+}
+.heading-primary {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 0 7px $color-white;
+    margin-bottom: 35px;
+    &--main {
+        font-size: 4rem;
+        letter-spacing: 6px;
+        display: block;
+        animation: moveLeft 1.2s ease-in-out;
+    }
+    &--sub {
+        font-size: 1.4rem;
+        letter-spacing: 11px;
+        display: block;
+        animation: moveRight 1.2s ease-in-out;
+    }
+}
+.heading__title {
+    margin-bottom: 2rem;
+    &--text {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+        display: inline-block;
+        cursor: pointer;
+        background-image: linear-gradient(
+            to right,
+            $color-primary-light,
+            $color-primary-dark);
+        color: transparent;
+        -webkit-background-clip: text;
+        transition: all 0.3s;
+        &:hover {
+            transform: skewY(5deg) scale(1.1);
+            text-shadow: 0.5rem 1rem 1.5rem rbga($color-black, .2);
+        }
+    }
+}
+.heading-people {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+.heading-tertiary {
+    @extend .heading-people;
+    height: 3rem;
+}
+.paragraph {
+    padding-left: 0.4em;
+    margin-bottom: 2em;
+}
+// @media screen and (max-width: 991px) {
+//     .heading-primary {
+//         margin-bottom: 35px;
+//         &--main {
+//             font-size: 4rem;
+//             letter-spacing: 6px;
+//             display: block;
+//             animation: moveLeft 1.2s ease-in-out;
+//         }
+//         &--sub {
+//             letter-spacing: 7px;
+//         }
+//     }
+// }
+@media screen and (max-width: 375px) {
+    .heading-primary {
+        margin-bottom: 3rem;
+        &--main {
+            font-size: 3rem;
+        }
+        &--sub {
+            letter-spacing: 4px;
+        }
+    }
+    .heading__title {
+        margin-bottom: 2rem;
+        &--text {
+            font-size: 1.8rem;
+        }
+    }
+    .paragraph {
+        font-size: 1rem;
+    }
+}

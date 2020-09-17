@@ -1,0 +1,60 @@
+.footer {
+    background-color: rgb(48,32,33);
+    padding: 7rem 0;
+    &__item {}
+    &__title {
+        color: #fff;
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+        .list {
+            &__item {
+                display: inline-block;
+                font-size: 1.8rem;
+                margin-right: 0.8rem;
+                &--faceboock {
+                    color: #395699;
+                    &:hover {
+                        color: #3a589d;
+                    }
+                }
+                &--instagram {
+                    color: #3B6994;
+                    &:hover {
+                        color: #3b6994;
+                    }
+                }
+                &--twitter {
+                    color: #2478BA;
+                    &:hover {
+                        color: #2274b5;
+                    }
+                }
+                &--flickr {
+                    color: #E5086F;
+                    &:hover {
+                        color: #e5086f;
+                    }
+                }
+            }
+        }
+        // .faceboock {
+        //     background-color: #395699;
+        // }
+        // .instagram {
+        //     background-color: #3B6994;
+        // }
+        // .twitter {
+        //     background-color: #2478BA;
+        // }
+        // .flickr {
+        //     background-color: #E5086F;
+        // }
+    }
+}

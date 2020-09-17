@@ -1,0 +1,69 @@
+@import '../abstracts/var';
+.sectionOne {
+    background-color: #7e7e7e14;
+    padding: 13rem 10rem;
+    margin-top: -13rem;
+}
+.sectionTow {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light,0.1),
+        rgba($color-primary-dark,0.8),),
+        url('../imgs/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10rem;
+    clip-path: ellipse(100% 50% at 52% 50%);
+    -webkit-clip-path: ellipse(100% 50% at 52% 50%);
+    margin-top: -5rem;
+}
+.sectionThree {
+    background-color: #7e7e7e14;
+    padding: 13rem 10rem 7rem 10rem;
+    margin-top: -13rem;
+    text-align: center;
+}
+.section-testimonials {
+    padding: 8rem 0;
+    position: relative;
+    background-image: linear-gradient(to right bottom,
+    rgba($color-grey-dark,0.1),
+    rgba($color-grey-line,1),),
+    url('../imgs/bg4.jpg');
+}
+.section-enroll {
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom,
+    rgba($color-primary-light,0.1),
+    rgba($color-primary-dark,0.6),);
+}
+@media screen and (max-width: 1199px) {
+    .sectionOne {
+        padding: 13rem 7rem 45rem 7rem;
+    }
+    .sectionTow {
+        padding: 8rem 7rem;
+    }
+    .sectionThree {
+        padding: 12rem 7rem 6rem 7rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .sectionOne {
+        padding: 13rem 7rem 50rem 7rem;
+    }
+    .sectionTow {
+        padding: 14rem 7rem;
+    }
+}
+@media screen and (max-width: 460px) {
+    .sectionOne {
+        padding: 13rem 7rem;
+    }
+    .sectionTow {
+        padding: 14rem 2rem;
+    }
+    .sectionThree {
+        padding: 12rem 3rem 6rem 3rem;
+    }
+}

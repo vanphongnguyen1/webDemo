@@ -1,0 +1,26 @@
+.shopping {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        .item {
+            border: 1px solid #ccc;
+            &__title {}
+            .list {
+                &__item {
+                    list-style: none;
+                }
+                &__a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &--img {}
+                    .content {
+                        &__text {}
+                        &__price {}
+                        &__price-sale {}
+                    }
+                }
+            }
+        }
+    }
+}

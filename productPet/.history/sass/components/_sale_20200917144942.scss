@@ -1,0 +1,55 @@
+.bg-box1 {
+    background-color: #FEC748;
+}
+.bg-box1 {
+    background-color: #FEC748;
+}
+.bg-box1 {
+    background-color: #FEC748;
+}
+.sec-sale {
+    background-color: $color-grey;
+    padding: 6rem 0;
+    margin-top: -3rem;
+    &__item {
+
+        position: relative;
+        height: 18rem;
+    }
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        &--img {
+            position: absolute;
+            top: 1.5rem;
+            left: 2.5rem;
+            height: 15rem;
+            object-fit: contain;
+        }
+        .box-title {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            display: inline-block;
+            max-width: 16rem;
+            color: #fff;
+            p {
+                color: $color-grey;
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 3rem;
+            }
+            h4 {
+                font-size: 2.6rem;
+                font-weight: 400;
+            }
+            span {
+                font-size: 2rem;
+                margin-top: 1.5rem;
+                display: inline-block;
+            }
+        }
+    }
+}

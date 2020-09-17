@@ -1,0 +1,10 @@
+.btn {
+    &--start {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $color-textmenu-hover;
+        padding: 1rem 2.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,51 @@
+.shopping {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        .item {
+            border: 1px solid #ccc;
+            padding: 1rem 2rem;
+            &__title {
+                font-size: 1.8rem;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+            }
+            .list {
+                &__item {
+                    list-style: none;
+                    padding: 1rem 0;
+                    margin-bottom: 1rem;
+                }
+                &__item:hover .container__text {
+                    color: $color-textmenu-hover;
+                }
+                &__a {
+                    display: flex;
+                    justify-content: space-between;
+                    // align-items: center;
+                    &--img {
+                        height: 6rem;
+                    }
+                    .content {
+                        margin-left: 5px;
+                        &__text {
+                            display: block;
+                            &:hover .container__text {
+                                color: $color-textmenu-hover;
+                            }
+                        }
+                        &__price {
+                            margin-right: 3px;
+                            text-decoration: line-through;
+                            font-size: 1.2rem;
+                            color: #ccc;
+                        }
+                        &__price-sale {
+                            color: #ffca44;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

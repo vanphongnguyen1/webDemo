@@ -1,0 +1,38 @@
+@import '../abstracts/var';
+.header {
+    background-image:
+        linear-gradient(
+            to right bottom,
+            rgba($color-primary-light,0.8),
+            rgba($color-primary-dark,0.8),),
+            url('../imgs/bg.jpg');
+    background-size: cover ;
+    background-position: center;
+    // background-attachment: fixed;
+    position: relative;
+    height: 50rem;
+    clip-path: ellipse(75% 90% at 52% 0%);
+    -webkit-clip-path: ellipse(75% 90% at 52% 0%);
+    &__logo {
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        img {
+            width: 30%;
+        }
+    }
+    &__text-heading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        text-align: center;
+    }
+}
+@media screen and(max-width: 375px) {
+    .header {
+        clip-path: ellipse(84% 90% at 50% 0%);
+        -webkit-clip-path: ellipse(84% 90% at 50% 0%);
+    }
+}

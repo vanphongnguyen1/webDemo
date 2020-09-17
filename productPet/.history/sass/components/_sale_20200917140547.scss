@@ -1,0 +1,23 @@
+.sec-sale {
+    background-color: $color-grey;
+    padding: 6rem 0;
+    &__item {
+        background-color: #FEC748;
+        position: relative;
+        height: 18rem;
+    }
+    &__link {
+       
+        &--img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box-title {
+            p {
+                color: $color-grey;
+                font-size: 2rem;
+            }
+        }
+    }
+}

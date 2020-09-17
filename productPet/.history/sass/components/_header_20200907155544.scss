@@ -1,0 +1,12 @@
+.header {
+    background-color: $bg-header;
+    .header-top {
+        color: $color-header;
+        &__home {
+            text-transform: uppercase;
+        }
+        &__date {}
+        &__email {}
+        &__login {}
+    }
+}

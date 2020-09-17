@@ -1,0 +1,241 @@
+@import '../abstracts/varlibel';
+@import '../abstracts/mixin';
+
+.navigation {
+    background-color: $color-white;
+    position: relative;
+    padding: 1.5rem;
+    &--fixed {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        box-shadow: 0 0 0.5rem 0.5rem rgba($color-black,0.25);
+        transition: all .4s ease-in-out;
+    }
+    .logo {
+        font-size: 3rem;
+        span {
+            color: $color-main;
+        }
+    }
+    .nav-menu {
+        &__list {
+            &--item {
+                display: inline-block;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            &--text {
+                padding: 0 1rem;
+                &:hover {
+                    @include hover-a;
+                }
+            }
+        }
+    }
+    .search__box {
+        position: relative;
+        &--input {
+            width: 100%;
+            border: 2px solid $color-main;
+            padding-left: 1.5rem;
+            border-radius: 10rem;
+            height: 4.5rem;
+            outline: none;
+            font-size: 1.6rem;
+        }
+        &--icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: $color-white;
+            background-color: $color-main;
+            width: 20%;
+            text-align: center;
+            font-size: 2.5rem;
+            height: 4.5rem;
+            line-height: 4.5rem;
+            border-radius: 0 10rem 10rem 0;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+    .call__us {
+        justify-content: flex-end;
+        &--img {
+            height: 3.5rem;
+        }
+        &--info {
+            font-size: 1.4rem;
+            margin-left: 1.5rem;
+            span {
+                font-weight: 500;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .navigation {
+        .logo {
+            font-size: 2.5rem;
+        }
+        .nav-menu {
+            &__list {
+                &--item {
+                    font-size: 1.4rem;
+                }
+                &--text {
+                    padding: 0 0.5rem;
+                }
+            }
+        }
+        .search__box {
+            &--input {
+                border: 1px solid $color-main;
+                height: 4rem;
+                font-size: 1.4rem;
+            }
+            &--icon {
+                font-size: 2.5rem;
+                height: 4rem;
+                line-height: 4rem;
+            }
+        }
+        .call__us {
+            &--info {
+                font-size: 1.3rem;
+                margin-left: 1rem;
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 850.98px) {
+    .navigation {
+        .logo {
+            font-size: 2.2rem;
+        }
+        .nav-menu {
+            &__list {
+                &--item {
+                    font-size: 1.3rem;
+                }
+                &--text {
+                    padding: 0 0.3rem;
+                }
+            }
+        }
+        .search__box {
+            &--input {
+                height: 3.5rem;
+                font-size: 1.3rem;
+            }
+            &--icon {
+                font-size: 2rem;
+                height: 3.5rem;
+                line-height: 3.5rem;
+            }
+        }
+        .call__us {
+            &--img {
+                height: 3.2rem;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .navigation {
+        padding: 0.5rem 0;
+        .logo {
+            font-size: 2.5rem
+        }
+        .nav-menu {
+            &__list {
+                &--item {
+                    font-size: 1.4rem;
+                }
+                &--text {
+                    padding: 0 1rem;
+                    &:hover {
+                        @include hover-a;
+                    }
+                }
+            }
+        }
+        .search__box {
+            &--input {
+                height: 3.5rem;
+                font-size: 1.4rem;
+            }
+            &--icon {
+                font-size: 2rem;
+                height: 3.5rem;
+                line-height: 3.5rem;
+            }
+        }
+        .call__us {
+            &--img {
+                height: 3.5rem;
+            }
+            &--info {
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576.98px) {
+    .navigation {
+        .logo {
+            text-align: center;
+        }
+        .nav-menu {
+            &__list {
+                margin: 1rem 0;
+                &--item {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .call__us {
+            justify-content: center;
+            margin: 0.5rem 0;
+        }
+    }
+}
+@media (max-width:440px) {
+    .navigation {
+        box-shadow: 0 0 1rem;
+    }
+}
+@media (max-width: 360px) {
+    .navigation {
+        .nav-menu {
+            &__list {
+                &--item {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .call__us {
+            &--info {
+                font-size: 1rem;
+                span {
+                    font-size: 1rem;
+                }
+            }
+            &--img {
+                height: 2.5rem;
+            }
+        }
+    }
+}

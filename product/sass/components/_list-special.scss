@@ -1,0 +1,14 @@
+.list-special {
+    &__item {
+        margin-top: 3rem;
+        &--img {
+            margin: 0 auto;
+            width: 70%;
+        }
+        &--h3 {
+            margin: 2rem 0;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+    }
+}

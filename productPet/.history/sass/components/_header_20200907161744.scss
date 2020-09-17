@@ -1,0 +1,27 @@
+.header {
+    background-color: $bg-header;
+    .header-top {
+        color: $color-header;
+        padding: 1rem;
+        &__home {
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+        }
+        &__email {
+            display: flex;
+            align-items: center;
+        }
+        &__login {
+            display: flex;
+            align-items: center;
+        }
+        &__icon {
+            font-size: 1.6rem;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.shipping {
+    &__box {
+        &--title {}
+        &--text {}
+    }
+    .bg-box1 {
+        background-color: $color-main;
+    }
+}

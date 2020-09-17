@@ -1,0 +1,27 @@
+.btn {
+    border-radius: 2px;
+    &--start {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $color-textmenu-hover;
+        padding: 1rem 2.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            box-shadow: inset 0 0 0px 10rem rgba(0,0,0,0.2);
+        }
+    }
+    &--cart {
+        display: inline-block;
+        padding: 0.5rem 3rem;
+        border: 1px solid $color-grey-dark;
+        margin: 2rem 0;
+        color: #697074;
+        background-color: $color-grey;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #A5C21C;
+        }
+    }
+}

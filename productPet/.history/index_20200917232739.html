@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <p class="header-top__home">
+                            <span class="header-top__icon"><i class="fal fa-home"></i></span>
+                            home: 401-cổ nhuế, bắc từ liêm, hà nội
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p class="header-top__date">
+                            <span class="header-top__icon"><i class="fal fa-clock"></i></span>
+                            Open Mon-fri: 6:30AM - 7PM,Sat: 8AM - 5PM
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p class="header-top__email">
+                            <span class="header-top__icon"><i class="fal fa-envelope"></i></span>
+                            vanphongnguyen34@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-1">
+                        <p class="header-top__login">
+                            <span class="header-top__icon"><i class="fal fa-sign-in-alt"></i></span>
+                            Login
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-4">
+                        <div class="header-bottom__item">
+                            <a href="" class="header-bottom__item--logo">
+                                <img src="./images/Pet-Care-1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="header-bottom__item">
+                            <div class="row max-h">
+                                <div class="col-6">
+                                    <div class="item__phone">
+                                        <span class="item__phone--icon">
+                                            <i class="fal fa-phone-volume"></i>
+                                        </span>
+                                        <span class="item__phone--text">Call Us</span>
+                                        <span class="item__phone--number">033 726 3377</span>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="item__cart">
+                                        <div class="item__cart-item">
+                                            <span class="item__cart-item--text">Giỏ Hàng/0đ</span>
+                                            <span class="item__cart-item--icon">
+                                                <i class="fal fa-shopping-cart"></i>                                            </span>
+                                        </div>
+                                        <div class="list-cart">
+                                            <ul>
+                                                <li><a href=""></a></li>
+                                                <li>
+                                                    <div class="list-cart__content">
+                                                        <p class="list-cart__content--text">
+                                                            Chưa có sản phầm nào trong giỏ hàng.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="item__search">
+                                        <div class="item__search-box">
+                                            <span class="item__search-box--icon">
+                                                <i class="fal fa-search"></i>
+                                            </span>
+                                        </div>
+                                        <div class="dropdown">
+                                            <div class="dropdown__box">
+                                                <div class="dropdown__search">
+                                                    <input type="text" class="dropdown__search--input" value="" placeholder="Search in here...">
+                                                    <span class="dropdown__search--icon">
+                                                        <i class="fal fa-search"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="list-product">
+                                                    <ul class="list">
+                                                        <li class="list__item"><a href=""></a></li>
+                                                        <li class="list__item">
+                                                            <div class="list__content">
+                                                                <p class="list__content--text">
+                                                                    Không tìm thấy sản phẩm.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list__item">
+                                                            <div class="list__content">
+                                                                <p class="list__content--text">
+                                                                    Không tìm thấy sản phẩm.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list__item">
+                                                            <div class="list__content">
+                                                                <p class="list__content--text">
+                                                                    Không tìm thấy sản phẩm.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list__item">
+                                                            <div class="list__content">
+                                                                <p class="list__content--text">
+                                                                    Không tìm thấy sản phẩm.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="container">
+            <div class="menu-box">
+                <ul class="menu-box__list">
+                    <li class="menu-box__item">
+                        <a href="" class="menu-box__text">Trang chủ</a>
+                    </li>
+                    <li class="menu-box__item">
+                        <a href="" class="menu-box__text">Giới thiệu</a>
+                    </li>
+                    <li class="menu-box__item">
+                        <a href="" class="menu-box__text">
+                            Cửa hàng
+                            <span class="menu-box__text--icon">
+                                <i class="fal fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul class="list-menu">
+                            <li class="list-menu__item">
+                                <a href="" class="list-menu__text">Giỏ hàng</a>
+                            </li>
+                            <li class="list-menu__item">
+                                <a href="" class="list-menu__text">Kiểm tra đơn hàng</a>
+                            </li>
+                            <li class="list-menu__item">
+                                <a href="" class="list-menu__text">Thanh toán</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-box__item">
+                        <a href="" class="menu-box__text">Tin tức</a>
+                    </li>
+                    <li class="menu-box__item">
+                        <a href="" class="menu-box__text">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slider__box">
+            <div class="slider__item-one">
+                <div class="slider__item-one--sale">
+                    <img src="./images/sale-25.png" alt="">
+                </div>
+                <div class="heading__title">
+                    <h2 class="heading__title--h2">
+                        Năm mới
+                    </h2>
+                    <h1 class="heading__title--h1">
+                        Tiết kiệm mới!
+                    </h1>
+                    <p class="heading__title--p">
+                        Tiết kiệm cho những thứ quan trọng của bạn
+                    </p>
+                    <h6 class="heading__title--h6">
+                        Tại cửa hàng và trực tuyến
+                    </h6>
+                    <a href="#" class="btn btn--start">bắt đầu</a>
+                </div>
+            </div>
+            <div class="slider__item-two">
+                <div class="slider__item-two--sale">
+                    <img src="./images/sale-30.png" alt="">
+                </div>
+                <div class="heading__title">
+                    <h2 class="heading__title--h2">
+                        Mua hàng online!
+                    </h2>
+                    <h1 class="heading__title--h1">
+                        Tiết kiệm mới!
+                    </h1>
+                    <p class="heading__title--p">
+                        Tiết kiệm cho những thứ quan trọng của bạn
+                    </p>
+                    <h6 class="heading__title--h6">
+                        Tại cửa hàng và trực tuyến
+                    </h6>
+                    <a href="#" class="btn btn--start">bắt đầu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="sec-sale">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="sec-sale__item bg-box1">
+                            <a href="" class="sec-sale__link">
+                                <img src="./images/dog-small.png" alt="" class="sec-sale__link--img">
+                                <div class="box-title">
+                                    <p>Tiết kiệm</p>
+                                    <h3>25%</h3>
+                                    <h4>Thức ăn chó mèo</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sec-sale__item bg-box2">
+                            <div class="sec-sale__link">
+                                <img src="./images/slider-cat.png" alt="" class="sec-sale__link--img">
+                                <div class="box-title">
+                                    <p>Tư vấn</p>
+                                    <h3>Miễn Phí</h3>
+                                    <a href="" >
+                                        <span>
+                                            Tư vấn
+                                            <i class="fal fa-chevron-right icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="sec-sale__item bg-box3">
+                            <div class="sec-sale__link">
+                                <img src="./images/slider-dog.png" alt="" class="sec-sale__link--img l-0">
+                                <div class="box-title">
+                                    <p>Có hạn!</p>
+                                    <h4>tiết kiệm đến
+                                        <span>45%</span>
+                                    </h4>
+                                    <a href="" >
+                                        <span>
+                                            Nhiều hơn
+                                            <i class="fal fa-chevron-right icon"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="container">
+                <div class="heading__title">
+                    <h2>Sản phẩm hiện tại</h2>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-1.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Phụ kiện</p>
+                                    <h4 class="content__text--h4">Cổ áo ra nguyên bản</h4>
+                                    <span class="content__text--price">$130.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-2.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Thức ăn chó mèo</p>
+                                    <h4 class="content__text--h4">Thức ăn</h4>
+                                    <span class="content__text--price">$155.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-3.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Phụ kiện</p>
+                                    <h4 class="content__text--h4">Mèo và Chó nhỏ</h4>
+                                    <span class="content__text--price">
+                                        <span class="content__text--price-sale">
+                                            $65.000
+                                        </span>$55.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-4.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Thời trang</p>
+                                    <h4 class="content__text--h4">Áo khoác mùa đông</h4>
+                                    <span class="content__text--price">$755.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec-ntt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="gallery">
+                            <a href="" class="gallery__a">
+                                <img src="./images/ntt1.png" alt="" class="gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gallery">
+                            <a href="" class="gallery__a">
+                                <img src="./images/ntt2.png" alt="" class="gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gallery">
+                            <a href="" class="gallery__a">
+                                <img src="./images/ntt3.png" alt="" class="gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gallery">
+                            <a href="" class="gallery__a">
+                                <img src="./images/ntt4.png" alt="" class="gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="container">
+                <div class="heading__title">
+                    <h2>Sản phẩm phổ biến</h2>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-5.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Phụ kiện</p>
+                                    <h4 class="content__text--h4">Cổ áo ra nguyên bản</h4>
+                                    <span class="content__text--price">$130.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-1.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Thức ăn chó mèo</p>
+                                    <h4 class="content__text--h4">Thức ăn</h4>
+                                    <span class="content__text--price">$155.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-3.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Phụ kiện</p>
+                                    <h4 class="content__text--h4">Mèo và Chó nhỏ</h4>
+                                    <span class="content__text--price">
+                                        <span class="content__text--price-sale">
+                                            $65.000
+                                        </span>$55.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-4.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Thời trang</p>
+                                    <h4 class="content__text--h4">Áo khoác mùa đông</h4>
+                                    <span class="content__text--price">$755.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-5.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Phụ kiện</p>
+                                    <h4 class="content__text--h4">Cổ áo ra nguyên bản</h4>
+                                    <span class="content__text--price">$130.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-1.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Thức ăn chó mèo</p>
+                                    <h4 class="content__text--h4">Thức ăn</h4>
+                                    <span class="content__text--price">$155.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-3.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Phụ kiện</p>
+                                    <h4 class="content__text--h4">Mèo và Chó nhỏ</h4>
+                                    <span class="content__text--price">
+                                        <span class="content__text--price-sale">
+                                            $65.000
+                                        </span>$55.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product__box">
+                            <div class="content">
+                                <div class="content__img">
+                                    <img src="./images/sec3-4.jpg" alt="">
+                                </div>
+                                <div class="content__text">
+                                    <p class="content__text--p">Thời trang</p>
+                                    <h4 class="content__text--h4">Áo khoác mùa đông</h4>
+                                    <span class="content__text--price">$755.000</span>
+                                    <a href="" class="btn btn--cart">Giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shipping">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shipping__box bg-box1">
+                            <a href="">
+                                <h2 class="shipping__box--title">Giảm thêm 40%</h2>
+                                <p class="shipping__box--text">trên hóa đơn $100, sử dụng mã giảm giá</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="shipping__box bg-box2">
+                            <a href="">
+                                <h2 class="shipping__box--title">Miễn phí ship</h2>
+                                <p class="shipping__box--text">trên hóa đơn $49~ có giới hạn</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping">
+            <div class="container">
+                <div class="shopping__box">
+                    <div class="item">
+                        <div class="item__title">
+                            <h4>Sản phẩm giảm giá</h4>
+                        </div>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-1-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-2-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-3-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="item__title">
+                            <h4>Sản phẩm giảm giá</h4>
+                        </div>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-6-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/food_2-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/Irene-Cage-1-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="item__title">
+                            <h4>Sản phẩm giảm giá</h4>
+                        </div>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-1-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-2-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-3-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="item__title">
+                            <h4>Sản phẩm giảm giá</h4>
+                        </div>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/sec3-6-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/food_2-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__a">
+                                    <img src="./images/Irene-Cage-1-100x100.jpg" alt="" class="list__a--img">
+                                    <div class="content">
+                                        <span class="content__text">Thức ăn bình thường</span>
+                                        <span class="content__price">$69</span>
+                                        <span class="content__price-sale">$50</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="footer__item">
+                                    <div class="footer__title">
+                                        <img src="./images/Pet-Care-1.png" alt="">
+                                        <p>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</p>
+                                        <div class="form">
+                                            <input type="email" class="form__email" name="" id="">
+                                            <span class="icon"><i class="fal fa-paper-plane"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="footer__item">
+                                    <div class="footer__title">
+                                        <h3>Liên hệ</h3>
+                                        <ul class="list-address">
+                                            <li class="list-address__item">
+                                                <a href="">
+                                                    <span class="icon"><i class="far fa-map-marker-alt"></i></span>
+                                                    <span class="list-address__item--text">Cổ Nhuế, Bắc Từ Liêm, Hà Nội</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-address__item">
+                                                <a href="">
+                                                    <span class="icon"><i class="fal fa-phone-rotary"></i></span>
+                                                    <span class="list-address__item--text">033 726 3377</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-address__item">
+                                                <a href="">
+                                                    <span class="icon"><i class="fal fa-envelope"></i></span>
+                                                    <span class="list-address__item--text">vanphongnguyen34@gmail.com</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="footer__item">
+                                    <div class="footer__title">
+                                        <h3>Hỗ trợ</h3>
+                                        <ul class="list-support">
+                                            <li class="list-support__item">
+                                                <a href=""class="list-support__item--text">FAQ</a>
+                                            </li>
+                                            <li class="list-support__item">
+                                                <a href=""class="list-support__item--text">Chăm sóc khách hàng</a>
+                                            </li>
+                                            <li class="list-support__item">
+                                                <a href=""class="list-support__item--text">Vận chuyển và Đổi trả hàng</a>
+                                            </li>
+                                            <li class="list-support__item">
+                                                <a href=""class="list-support__item--text">Liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                <h3>Thông tin</h3>
+                                <p>Trong những năm tới, người nostrud tập thể dục, khu học chánh có thể không hoạt động aliquip.</p>
+                                <ul class="list">
+                                    <li class="list__item" title="faceboock">
+                                        <a href=""class="list__item--faceboock"><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li class="list__item " title="instagram">
+                                        <a href=""class="list__item--instagram"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="list__item " title="twitter">
+                                        <a href=""class="list__item--twitter"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list__item " title="flickr">
+                                        <a href="" class="list__item--flickr"><i class="fab fa-flickr"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.shipping {
+    margin-bottom: 5rem;
+    &__box {
+        text-align: center;
+        border-bottom: 2px solid $color-grey-dark;
+        border-radius: 2px;
+        transition: all 0.4s ease-in-out;
+        &--title {
+            padding-top: 2.5rem;
+            color: #fff;
+            font-size: 3.5rem;
+        }
+        &--text {
+            padding-bottom: 2.5rem;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        &:hover {
+            transform: translateY(-5%);
+        }
+        &:active {
+            transform: translateY(0%);
+            box-shadow: 0 1rem 1rem 0 rgba($color-black,0.3);
+        }
+    }
+    .bg-box1 {
+        background-color: $color-main;
+    }
+    .bg-box2 {
+        background-color: $color-greenleaf;
+    }
+}

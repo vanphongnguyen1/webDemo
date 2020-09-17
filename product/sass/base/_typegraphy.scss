@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.title-primary {
+    margin-top: 3rem;
+    &--h2 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    &--h3 {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+}
+.title-clinet {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin: 30px 0;
+}

@@ -1,0 +1,75 @@
+.bg-box1 {
+    background-color: #FEC748;
+}
+.bg-box2 {
+    background-image: url(../images/slider-dog-bg-1024x336.jpg);
+}
+.bg-box3 {
+    background-image: url(../images/slider-cat-bg-1024x336.jpg);
+}
+.sec-sale {
+    background-color: $color-grey;
+    padding: 6rem 0;
+    margin-top: -3rem;
+    &__item {
+        position: relative;
+        height: 18rem;
+    }
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        &--img {
+            position: absolute;
+            top: 1.5rem;
+            left: 2.5rem;
+            height: 15rem;
+            object-fit: contain;
+        }
+        .box-title {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            display: inline-block;
+            width: 16rem;
+            color: #fff;
+            p {
+                color: $color-grey;
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 3rem;
+            }
+            h4 {
+                font-size: 2.4rem;
+                font-weight: 400;
+                span {
+                    font-size: 3.5rem;
+                    margin-top: 0;
+                }
+            }
+            span {
+                font-size: 2rem;
+                margin-top: 1.5rem;
+                display: flex;
+                align-items: center;
+                transition: all 0.3s ease-in-out;
+                .icon {
+                    font-size: 1rem;
+                    padding-top: 5px;
+                    margin-left: 0.5rem;
+                }
+                &:hover {
+                    color: $color-grey;
+                }
+            }
+        }
+    }
+    &__link:nth-child(3) {
+        &--img {
+            position: absolute;
+            left: 0rem;
+            top: 1.5rem;
+        }
+    }
+}

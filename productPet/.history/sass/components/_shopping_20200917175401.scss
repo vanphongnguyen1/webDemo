@@ -1,0 +1,20 @@
+.shopping {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        .item {
+            &__title {}
+            .list {
+                &__item {}
+                &__a {
+                    &--img {}
+                    .content {
+                        &__text {}
+                        &__price {}
+                        &__price-sale {}
+                    }
+                }
+            }
+        }
+    }
+}

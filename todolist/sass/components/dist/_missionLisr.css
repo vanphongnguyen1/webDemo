@@ -1,0 +1,42 @@
+.mission-list .done-box,
+.mission-list .box {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  height: 35rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.mission-list .done-box__heading,
+.mission-list .box__heading {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+.mission-list .done-box__item,
+.mission-list .box__item {
+  padding: 2rem 3rem;
+}
+.mission-list .done-box__list,
+.mission-list .box__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+.mission-list .done-box__list--text,
+.mission-list .box__list--text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: 1rem;
+  padding-left: 2rem;
+  width: 100%;
+}

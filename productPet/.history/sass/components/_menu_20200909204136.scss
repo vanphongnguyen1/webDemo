@@ -1,0 +1,25 @@
+.menu {
+    background-color: $color-main;
+    &-box {
+        &__list {
+            text-align: center;
+        }
+        &__item {
+            display: inline-block;
+            padding: 2rem 3rem;
+            margin: 0 0.5rem;
+            color: $color-text-menu;
+            transition: all 0.3s ease-in-out;
+            &--icon {
+                margin-left: 0.5rem;
+            }
+            &:hover {
+                color: $color-textmenu-hover;
+            }
+        }
+        &__text {
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+    }
+}
