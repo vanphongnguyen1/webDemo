@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="render()">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="form">
+                    <form action="" autocomplete="off" onsubmit="listStudents()">
+                        <h2 class="form__title">add student</h2>
+                        <input type="text" class="form__input form__input--name" name="name" id="" placeholder="Name">
+                        <div class="error-name"></div>
+                        <input type="Email" class="form__input form__input--email" name="email" id="" placeholder="Email">
+                        <div class="error-email"></div>
+                        <input type="tel" class="form__input form__input--phone" name="phone" id="" placeholder="Phone">
+                        <div class="error-numberphone"></div>
+                        <input type="text" class="form__input form__input--address" name="address" id="" placeholder="Address">
+                        <div class="error-address"></div>
+                        <input type="date" class="form__input form__input--date" name="date" id="">
+                        <div class="error-date"></div>
+                        <div class="form__gender">
+                            <lable>Gender:</lable>
+                            <div class="form__radio">
+                                <input type="radio" class="form__radio--gender " value="male" name="gender" id="male">
+                                <label for="male" class="form__radio--text">Male</label>
+                                <input type="radio" class="form__radio--gender " value="female" name="gender" id="female">
+                                <label for="female" class="form__radio--text">Female</label>
+                            </div>
+                            <div class="error-gender"></div>
+                        </div>
+                        <button type="submit" class="form__button" onclick="">Save Student</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>GENDER</th>
+                                <th>EAMIL</th>
+                                <th>PHONE</th>
+                                <th>ADDRESS</th>
+                                <th>DATE</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list-student">
+                                <!-- <tr>
+                                    <td>1</td>
+                                    <td>phong</td>
+                                    <td>male</td>
+                                    <td>maoa@gmai.com</td>
+                                    <td>154653132</td>
+                                    <td>asdasasdad</td>
+                                    <td>2020-08-21</td>
+                                    <td><a href="">edit</a>/<a href="">delete</a></td>
+                                </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.section-one {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    &__left {
+        width: 80%;
+        margin-left: 20%;
+        .title {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-top: 10rem;
+        }
+        p {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            color: $color-grey-line;
+        }
+    }
+
+}

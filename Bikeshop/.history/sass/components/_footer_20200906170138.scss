@@ -1,0 +1,54 @@
+footer {
+    background-image: linear-gradient(to top right,
+        rgba($color-black,0.8),rgba($color-black,0.8)),
+        url(../../img/bg-footer.jpg);
+    -webkit-background-image: linear-gradient(to top right,
+        rgba($color-black,0.8),rgba($color-black,0.8)),
+        url(../img/bg-footer.jpg);
+        padding: 10rem 25rem 5rem 25rem;
+    .email-form {
+        background-color: $color-with;
+        text-align: center;
+        padding: 5rem 0;
+        h4 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #c2c1c1;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+        .form {
+            position: relative;
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 3rem;
+            input {
+                width: 100%;
+                font-size: 1.4rem;
+                padding: 0.7rem;
+                height: 4rem;
+                outline: none;
+                border: none;
+                background-color: $color-grey-line;
+            }
+        }
+    }
+    .footer-bottom {
+        margin-top: 10rem;
+        border-top: 1px solid $color-grey-line;
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: $color-with;
+        display: flex;
+        justify-content: space-between;
+        span {
+            margin-top: 2.5rem;
+        }
+    }
+}

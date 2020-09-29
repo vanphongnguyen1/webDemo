@@ -1,0 +1,98 @@
+.section-three {
+    &__text {
+        text-align: center;
+        h4 {
+            @include text-heading
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #c2c1c1;
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+    &__show {
+        margin-top: 8rem;
+        position: relative;
+        &--zoom {
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            .bg {
+                background-color: #3c3c3c;
+                padding: 0.3rem;
+            }
+            .bd {
+                color: #000;
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 1rem 0;
+                border: 1px solid $color-grey-line;
+                .redo {
+                    transform: rotateZ(140deg);
+                    padding: 1rem 0;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    &:hover,
+                    &:active {
+                        color: #fff;
+                    }
+                }
+                .plus,
+                .minus {
+                    padding: 1rem 0;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    &:hover,
+                    &:active {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &--image {
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        &--item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            .mr-b {
+                cursor: pointer;
+                width: 14rem;
+                height: 9rem;
+                margin-bottom: 1rem;
+                transition: all 0.7s ease-in-out;
+            }
+            .img1 {
+                background-image: url(../img/1.jpg);
+                &:hover {
+                    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)), url(../img/1.jpg);
+                }
+            }
+            .img2 {
+                background-image: url(../img/2.jpg);
+                &:hover {
+                    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)), url(../img/2.jpg); 
+                }
+            }
+            .img3 {
+                background-image: url(../img/3.jpg);
+                &:hover {
+                    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)), url(../img/3.jpg); 
+                }
+            }
+        }
+    }
+}

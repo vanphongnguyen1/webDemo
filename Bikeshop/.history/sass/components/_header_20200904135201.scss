@@ -1,0 +1,28 @@
+header {
+    background-image: linear-gradient(to top right,red,black),;
+    .nav {
+        padding: 4.5rem 0;
+        .logo {}
+        .menu {
+            &__list {
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 0;
+            }
+            &__item {
+                font-size: 1.4rem;
+                display: inline-block;
+                padding: 1rem 2.5rem;
+                font-weight: 600;
+            }
+            &__text {
+                color: $color-grey;
+                &:hover {
+                    color: $color-with;
+                }
+            }
+        }
+    }
+}

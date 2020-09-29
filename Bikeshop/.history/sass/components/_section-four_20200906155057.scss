@@ -1,0 +1,11 @@
+.section-four {
+    text-align: center;
+    &__heading {
+        h4 {
+            @include text-heading
+        }
+        p {
+            @include subtitle
+        }
+    }
+}

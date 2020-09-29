@@ -1,0 +1,17 @@
+.table {
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table table tr {
+  font-size: 1.6rem;
+}
+.table table tr th,
+.table table tr td {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}

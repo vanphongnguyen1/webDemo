@@ -1,0 +1,15 @@
+.bg-button {
+    padding: 0.5rem;
+    margin-top: 8rem;
+    background-color: #3c3c3c;
+    display: inline-block;
+    .btn {
+        padding: 0.7rem 1.5rem;
+        border: 1px solid $color-grey;
+        background-color: #3c3c3c;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-grey-line;
+        display: inline-block;
+    }
+}

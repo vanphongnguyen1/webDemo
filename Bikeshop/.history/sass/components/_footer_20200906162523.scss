@@ -1,0 +1,28 @@
+footer {
+    background-image: linear-gradient(to top right,
+        rgba($color-black,0.8),rgba($color-black,0.8)),
+        url(../../img/bg-footer.jpg);
+        padding: 15rem 30rem 10rem 30rem;
+    .email-form {
+        background-color: $color-with;
+        text-align: center;
+        h4 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-top: 5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #c2c1c1;
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+        input {}
+    }
+    .footer-bottom {
+        span {}
+    }
+}

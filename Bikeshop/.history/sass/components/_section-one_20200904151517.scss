@@ -1,0 +1,18 @@
+.section-one {
+    &__left {
+        width: 400px;
+        .title {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-top: 10rem;
+        }
+        p {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            line-height: 3rem;
+    
+        }
+    }
+
+}

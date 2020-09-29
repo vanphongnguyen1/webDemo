@@ -1,0 +1,14 @@
+@mixin text-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 5rem;
+}
+@mixin subtitle {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #c2c1c1;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}

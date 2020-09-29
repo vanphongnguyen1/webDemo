@@ -1,0 +1,41 @@
+footer {
+    background-image: linear-gradient(to top right,
+        rgba($color-black,0.8),rgba($color-black,0.8)),
+        url(../../img/bg-footer.jpg);
+        padding: 10rem 20rem 5rem 20rem;
+    .email-form {
+        background-color: $color-with;
+        text-align: center;
+        padding: 5rem 0;
+        h4 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #c2c1c1;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+        .form {
+            position: relative;
+            width: 60%;
+            margin: 0 auto;
+            input {
+                width: 100%;
+                font-size: 1.4rem;
+                padding: 0.7rem;
+                height: 4rem;
+                outline: none;
+                border: none;
+                background-color: $color-grey-line;
+            }
+        }
+    }
+    .footer-bottom {
+        span {}
+    }
+}

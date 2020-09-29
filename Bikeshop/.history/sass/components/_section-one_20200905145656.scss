@@ -1,0 +1,23 @@
+.section-one {
+    margin-top: 10rem;
+    // margin-bottom: 5rem;
+    &__left {
+        width: 70%;
+        margin-left: 20%;
+        .title {
+            @include text-heading
+        }
+        p {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 3rem;
+            color: $color-grey-line;
+        }
+    }
+    &__right {
+        img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}

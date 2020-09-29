@@ -1,0 +1,24 @@
+.section-tow {
+    &__item {
+        &--left {}
+        &--right {
+            width: 45rem;
+            color: $color-grey-line;
+            margin-top: 8rem;
+            padding-left: 2rem;
+            border-left: 1px solid #c2c1c1;
+            line-height: 2rem;
+            position: relative;
+                &::before {
+                    content: "";
+                    width: 19rem;
+                    height: 0.01rem;
+                    background-color: $color-grey-line;
+                    position: absolute;
+                    top: 50%;
+                    right: 100%;
+                    transform: translateY(50%);
+                }
+        }
+    }
+}

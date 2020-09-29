@@ -1,0 +1,21 @@
+.section-tow {
+    &__item {
+        &--left {}
+        &--right {
+            width: 45rem;
+            color: #ccc;
+            margin-top: 8rem;
+            padding-left: 2rem;
+            border-left: 1px solid #ccc;
+            line-height: 2rem;
+            p {
+                &::after {
+                    contain: "";
+                }
+                &::before {
+                    contain: "";
+                }
+            }
+        }
+    }
+}

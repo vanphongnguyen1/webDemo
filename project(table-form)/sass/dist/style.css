@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  width: calc(3/12 * 100%);
+}
+
+.col-8 {
+  width: calc(8/12 * 100%);
+}
+
+.form {
+  text-transform: uppercase;
+  padding: 1.5rem;
+  border: 1px solid #f7f7f7;
+  margin-top: 3rem;
+  background-color: #f7f7f7;
+}
+.form__title {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+}
+.form__input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+}
+.form__input:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.form__gender {
+  padding: 1.5rem 0 1.5rem 0.5rem;
+  text-transform: capitalize;
+  display: flex;
+}
+.form__gender lable {
+  font-size: 1.6rem;
+}
+.form__gender .form__radio {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.form__gender .form__radio--gender {
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.form__gender .form__radio--text {
+  font-size: 1.4rem;
+  margin-left: 4px;
+  cursor: pointer;
+}
+.form__button {
+  background-color: #00b9ff;
+  border: 1px solid #00b9ff;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.form__button:hover {
+  background-color: #1b91be;
+}

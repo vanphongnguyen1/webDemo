@@ -1,0 +1,33 @@
+.section-three {
+    &__text {
+        text-align: center;
+        h4 {
+            @include text-heading
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #c2c1c1;
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+    &__show {
+        &--zooom {
+            width: 60%;
+            .bg {
+                background-color: #3c3c3c;
+            }
+            .bd {
+                color: #ccc;
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 1rem 0;
+                .redo {}
+                .plus {}
+                .minus {}
+            }
+        }
+    }
+}

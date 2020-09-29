@@ -1,0 +1,14 @@
+.section-three {
+    &__text {
+        text-align: center;
+        h4 {
+            @include text-heading
+        }
+        p {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 3rem;
+            color: #c2c1c1;
+        }
+    }
+}

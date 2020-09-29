@@ -1,0 +1,18 @@
+header {
+    background-image: linear-gradient(to top right,red,black),;
+    .nav {
+        padding: 4.5rem 0;
+        .logo {}
+        .menu {
+            &__list {
+                text-transform: uppercase;
+            }
+            &__item {
+                font-size: 1.4rem;
+            }
+            &__text {
+                color: $color-grey;
+            }
+        }
+    }
+}

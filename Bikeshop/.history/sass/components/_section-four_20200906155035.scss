@@ -1,0 +1,10 @@
+.section-four {
+    &__heading {
+        h4 {
+            @include text-heading
+        }
+        p {
+            @include subtitle
+        }
+    }
+}

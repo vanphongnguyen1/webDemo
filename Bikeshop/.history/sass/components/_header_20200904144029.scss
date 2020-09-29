@@ -1,0 +1,70 @@
+header {
+    background-image: linear-gradient(to top right,rgba(#2b2e2d,0.6),rgba(#2b2e2d,0.6)),
+    url(../../img/slider.png);
+    height: 100vh;
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .nav {
+        padding: 2rem 0;
+        .logo {}
+        .menu {
+            &__list {
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 0;
+            }
+            &__item {
+                font-size: 1.4rem;
+                display: inline-block;
+                padding: 1rem 2.5rem;
+                // font-weight: 600;
+            }
+            &__text {
+                color: $color-with;
+                &:hover {
+                    color: $color-grey;
+                }
+            }
+        }
+        .card{
+            text-align: right;
+            text-align: -webkit-right;
+            padding: 1.5rem 0;
+            &__table {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                span {
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    color: $color-with;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    .heading__title {
+        margin-top: 15rem;
+        h1 {
+            width: 60%;
+            font-size: 4rem;
+            text-align: center;
+            margin: 0 auto;
+            letter-spacing: 3px;
+            color: $color-with;
+            font-weight: 500;
+        }
+        h6 {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            font-weight: 200;
+            color: $color-grey;
+        }
+    }
+}

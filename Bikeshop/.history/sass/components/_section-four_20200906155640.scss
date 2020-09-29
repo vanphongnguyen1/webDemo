@@ -1,0 +1,30 @@
+.section-four {
+    text-align: center;
+    &__heading {
+        h4 {
+            @include text-heading
+        }
+        p {
+            @include subtitle
+        }
+    }
+    &__item {
+        .product {
+            text-align: center;
+            img {
+                margin: 0 auto;
+                width: 70%;
+            }
+            h5 {
+                font-size: 1.6rem;
+                margin-top: 5rem;
+            }
+            p {
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: #777;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
