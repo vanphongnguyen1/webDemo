@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ccc;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input, button, textarea {
+    font-family: inherit;
+}
+ul {
+    margin: 0;
+    padding: 0
+}
+h1, h2, h3, h4, h5, h6, p {
+    /* font-size: 14px;
+    font-weight: 400; */
+    margin: 0;
+    padding: 0;
+    line-height: inherit
+}
+img {
+    width: 100%;
+    display: block;
+}
+.container-full {
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+/* ------------------------------------------- */
+header .bg-header {
+    background-color: #1a1a1a;
+    padding: 12px 0;
+}
+header .bg-header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .bg-header .row .logo {
+    width: 150px;
+}
+header .bg-header .row .menu {
+    width: calc(100% - 450px);
+    text-align: center;
+}
+header .bg-header .row ul li {
+    display: inline-block;
+    position: relative;
+}
+header .bg-header .row ul li a {
+    display: inline-block;
+    padding: 7px 22px;
+}
+header .bg-header .row ul li a:hover {
+    color: #fff;
+    /* background-color: black; */
+}
+header .bg-header .row ul li .menu-children {
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 400px;
+    display: none;
+}
+header .bg-header .row ul li .menu-children div ul li {
+    display: block;
+    text-align: center;
+}
+header .bg-header .row ul li .menu-children div{
+    flex-grow: 1;
+}
+header .bg-header .row ul li .menu-children div ul li a {
+    width: 100%;
+}
+header .bg-header .row ul li .menu-children div ul li a:hover {
+    color: #fff;
+    background-color: black;
+}
+header .bg-header .row ul li:hover .menu-children {
+    display: flex;
+}
+header .bg-header .row .search {
+    width: 300px;
+    position: relative;
+}
+header .bg-header .row .search input {
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
+    border: none;
+}
+header .bg-header .row .search button {
+    border: none;
+    width: 45px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 50px 50px 0;
+    color:#fff;
+    background-color: #808080;
+    cursor: pointer;
+    margin: auto;
+}
+/* ------------------------------------------------ */
+main .bg-main {
+    background: url('../imgs/banner.jpg') no-repeat fixed;
+    background-position: center;
+}
+main .bg-main .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .bg-main .row .infomasion {
+    width: 350px;
+    padding: 30px 15px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+main .bg-main .row .infomasion .info-title {
+    background: #808080;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 20px 20px 0px 0px;
+}
+main .bg-main .row .infomasion form {
+    background-color: #fff;
+    width: 100%;
+    padding: 0 12px;
+}
+main .bg-main .row .infomasion form input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+main .bg-main .row .infomasion form label {
+    color: red;
+    font-size: 12px;
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 500;
+}
+main .bg-main .row .infomasion form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+main .bg-main .row .infomasion form button {
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #808080;
+    margin: 5px 0;
+    padding: 10px 0;
+    height: auto;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+main .bg-main .row .infomasion form button::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    margin: auto;
+}
+main .bg-main .row .infomasion form button::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 55px;
+    bottom: 0;
+    margin: auto;
+}
+main .bg-main .row .title {
+    width: calc(100% - 400px);
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 7px #000;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+/* -------------------------------------------------------- */
+footer .row {
+    display:flex;
+}
+/* footer .row .item {
+    flex: 1;
+
+} */
+footer .row .item img {
+    height: 250px;
+    object-fit: fill;
+    filter: grayscale(1);
+    transition: all 0.2s ease;
+}
+footer .row .item img:hover {
+    filter: none;
+}
+@media screen and ( max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    header .bg-header .row {
+        flex-direction: column;
+    }
+    header .bg-header .row .menu {
+        width: 100%;
+        margin: 20px 0;
+    }
+    header .bg-header .row ul li a {
+        padding: 7px 15px;
+    }
+    main .bg-main .row {
+        flex-direction: column-reverse;
+    }
+    main .bg-main .row .title {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        margin: 20px;
+    }
+    footer .row {
+        flex-direction: column;
+    }
+}

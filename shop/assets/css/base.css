@@ -1,0 +1,252 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #ccc;
+    --primary-color: #FB5533;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    font-size: 62.5%;
+    font-weight: 300;
+    /* lấy 62.5% để khi sét font bằng rem thì 1 rem = 10px */
+}
+body {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container__full {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input, button, textarea {
+    font-family: inherit;
+}
+ul {
+    margin: 0;
+    padding: 0
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    line-height: inherit
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.dp-none.dp-none {
+    display: none;
+}
+.main {
+    background-color: #f1f1f1;
+    padding: 2rem 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 -0.5rem; */
+}
+div[class^="col-"].pd {
+    padding: 0;
+}
+/* --------btn-------- */
+.btn {
+    border: none;
+    min-width: 14rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn--prev {
+    background: var(--white-color);
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn--prev:hover {
+    background: var(--text-color);
+    /* color: var(--white-color); */
+}
+.btn--primary {
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+.btn--primary:hover {
+    background: #ff6343;
+}
+.btn--icon {
+    font-size: 1.7rem;
+    margin-right: 2rem;
+}
+.btn--gg,
+.btn--fb {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    flex: 1;
+}
+.btn--gg {
+    background: var(--white-color);
+}
+.btn--fb {
+    background: #0052D0;
+    color: var(--white-color);
+    margin-right: 1rem;
+}
+.btn.classify__common.btn--classify-active,
+.btn.classify__new.btn--classify-active,
+.btn.classify__selling.btn--classify-active {
+    background: var(--primary-color);
+}
+.btn--page-prev,
+.btn--page-next {
+    padding: 0.7rem 1.2rem;
+    box-shadow: 0px 1px 1px #ccc;
+    font-size: 1.2rem;
+    background: #fff;
+    color: #555;
+}
+.btn--page-prev {
+    border-radius: 3px 0 0 3px;
+    border-right: 1px solid rgba(0,0,0,0.02);
+}
+.btn--page-next {
+    border-radius: 0 3px 3px 0;
+}
+.btn--page-desabled {
+    background: #f3f2f2;
+    color: #ccc;
+    cursor: default;
+}
+/* layout */
+div[class^="col-"] {
+    padding: 0 0.5rem;
+}
+.col-1 {
+    width: calc(1/12 * 100%);
+}
+.col-2 {
+    width: calc(2/12 * 100%);
+}
+.col-3 {
+    width: calc(3/12 * 100%);
+}
+.col-4 {
+    width: calc(4/12 * 100%);
+}
+.col-5 {
+    width: calc(5/12 * 100%);
+}
+.col-6 {
+    width: calc(6/12 * 100%);
+}
+.col-7 {
+    width: calc(7/12 * 100%);
+}
+.col-8 {
+    width: calc(8/12 * 100%);
+}
+.col-9 {
+    width: calc(9/12 * 100%);
+}
+.col-10 {
+    width: calc(10/12 * 100%);
+}
+.col-11 {
+    width: calc(11/12 * 100%);
+}
+.col-12 {
+    width: calc(12/12 * 100%);
+}
+.col-2-4 {
+    width: calc(24/(10*12) *100%);
+}
+/* pagination UI */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination__item {
+    list-style: none;
+    color: #939393;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.pagination__item:hover:not(:nth-child(7)) {
+    color: var(--white-color);
+    background: rgba(0,0,0,0.3)
+}
+.pagination__item-active {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination__item-link {
+    display: inline-block;
+    padding: 4px 1rem;
+    min-width: 3.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.pagination__item-icon {}
+/* ----------animation---- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.9;
+    }
+    90%,95% {
+        opacity: 0.99;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGrow {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    70%,80%,90% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

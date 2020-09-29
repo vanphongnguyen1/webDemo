@@ -160,6 +160,15 @@ img {
       background-color: #A5C21C;
       color: #fff; }
 
+.fexed-scroll {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  transition: all .4s ease-in-out; }
+
 .header .header-top {
   font-size: 1.3rem;
   color: #6C6465;
@@ -252,6 +261,7 @@ img {
         display: none;
         transition: all 0.3s ease-in-out;
         animation-name: list-cart;
+        transform-origin: 30% top;
         animation-duration: 0.3s;
         z-index: 3; }
         .header .header-bottom__item .item__cart .list-cart::before, .header .header-bottom__item .item__cart .list-cart::after {
@@ -320,6 +330,7 @@ img {
       border: 2px solid #ddd;
       display: none;
       animation-name: list-cart;
+      transform-origin: 75% top;
       animation-duration: 0.3s;
       z-index: 3; }
       .header .header-bottom__item .item__search .dropdown:hover {
