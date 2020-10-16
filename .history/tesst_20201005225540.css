@@ -1,0 +1,36 @@
+.grid-full {
+    width: 100%;
+    display: block;
+}
+.grid {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 -4px;
+}
+/* PC */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .grid {
+        width: 984px;
+    }
+}
+@media (min-width: 1113px) {
+    .row {
+        margin:0 -12px;
+    }
+}
+/* tablet - PC */
+@media (min-width:740px) and (max-width: 1023px) {
+    .grid {
+        width: 644px;
+    }
+}
+@media (min-width:740px) {
+    .row {
+        margin:0 -8px;
+    }
+}

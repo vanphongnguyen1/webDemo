@@ -160,7 +160,6 @@ img {
     min-width: 3.5rem;
     font-size: 1.4rem;
     font-weight: 400;
-    -webkit-tap-highlight-color: transparent;
 }
 .pagination__item-icon {}
 /* ----------animation---- */

@@ -1,0 +1,33 @@
+/* Mobile $ Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header {
+        height: auto;
+    }
+    .header__bottom {
+        padding: 1rem 0;
+    }
+    .header__bottom-logo {
+        margin-bottom: 10px;
+    }
+    .header__bottom-cart {
+        justify-content: baseline;
+    }
+}
+/* Tablet */
+@media (min-width: 1023px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .header__bottom-cart--icon {
+        padding: 0 0.5rem;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
